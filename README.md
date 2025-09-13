@@ -1,8 +1,7 @@
 
 ---
 
-# 🧬 Advancing Statistical Models for Addressing Missing Data in HIV/AIDS Surveys  
-> *A Comprehensive Comparison of Machine Learning, Econometric, and Statistical Imputation Techniques on Real-World ZIMPHIA 2020 Data — Random Forest Achieves 96.7% Accuracy*
+# Advancing Statistical Models for Addressing Missing Data in HIV/AIDS Surveys  
 
 ![R](https://img.shields.io/badge/R-Advanced-blue?logo=r)  
 ![Python](https://img.shields.io/badge/Python-Supplementary-lightgrey?logo=python)  
@@ -11,9 +10,9 @@
 ![Public Health](https://img.shields.io/badge/Domain-HIV%2FAIDS%20Epidemiology-purple)  
 ![Accuracy](https://img.shields.io/badge/Accuracy-96.7%25%20(Random%20Forest)-green)
 
-## 📊 Key Insights & Public Health Implications
+## Key Insights & Public Health Implications
 
-### 1. 🏆 Model Performance: Random Forest Dominates
+### 1. Model Performance: Random Forest Dominates
 | Model             | Accuracy | Sensitivity | Specificity | Precision | Business/Public Health Value                     |
 |-------------------|----------|-------------|-------------|-----------|--------------------------------------------------|
 | **Random Forest** | **96.7%**| 96.68%      | 97.22%      | 99.69%    | Best for clinical decision support — minimizes false negatives (missed HIV cases) |
@@ -22,11 +21,11 @@
 | Heckman Model     | 95.54%   | 95.93%      | 95.66%      | 99.36%    | Corrects for selection bias — valuable for survey design |
 | Mean/Median       | 97.38%   | 97.68%      | 95.23%      | 99.32%    | Baseline — outperformed by ML in specificity     |
 
-> 📌 **Health Policy Takeaway**: “Use Random Forest for imputing HIV status and testing variables — its high sensitivity ensures no at-risk individual is missed.”
+> **Health Policy Takeaway**: “Use Random Forest for imputing HIV status and testing variables — its high sensitivity ensures no at-risk individual is missed.”
 
 ---
 
-### 2. 🧪 Domain Intelligence: You Speak Clinical + Data
+### 2. Domain Intelligence: You Speak Clinical + Data
 - **Logical Data Cleaning**: Set `everpregnant = "Not Applicable"` for male records — preventing biologically impossible imputations.
 - **Variable Understanding**: Mapped 20+ variables to domains:
   - **Clinical**: `hivstatusfinal`, `hivtstever`, `mcstatus` (male circumcision)
@@ -37,17 +36,17 @@
 
 ---
 
-### 3. 📈 Exploratory Data Analysis (EDA) — Uncovering Health Disparities
+### 3. Exploratory Data Analysis (EDA) — Uncovering Health Disparities
 - **Gender Imbalance**: 13,290 women vs. 9,461 men — critical for weighting and bias correction.
 - **Rural Bias**: 3x more men and 2.4x more women from rural vs. urban areas — impacts generalizability.
 - **Wealth Disparity**: “Lowest” wealth quintile most represented — suggests HIV programs must target low-income groups.
 - **Education**: 97% of men and 90% of women attended school — high baseline, but missingness was negligible.
 
-> 📌 **Program Design Insight**: “HIV interventions in Zimbabwe must prioritize rural, low-income populations — they’re overrepresented in surveys but may have least access to care.”
+> **Program Design Insight**: “HIV interventions in Zimbabwe must prioritize rural, low-income populations — they’re overrepresented in surveys but may have least access to care.”
 
 ---
 
-### 4. 🧩 Advanced Methodology: Beyond Basic Imputation
+### 4. Advanced Methodology: Beyond Basic Imputation
 #### ➤ Heckman Selection Model (Econometric Rigor)
 - **Why Used**: To correct for **sample selection bias** — e.g., healthier individuals more likely to consent to HIV testing.
 - **Two-Stage Process**:
@@ -65,11 +64,11 @@
 - **Specificity**: % of true HIV- cases correctly identified — reduces false positives.
 - **Precision**: % of predicted HIV+ cases that are truly positive — builds trust in model.
 
-> 📌 **Data Quality Insight**: “Don’t just use Accuracy — in healthcare, Sensitivity and Specificity are non-negotiable.”
+> **Data Quality Insight**: “Don’t just use Accuracy — in healthcare, Sensitivity and Specificity are non-negotiable.”
 
 ---
 
-## 🛠️ Technical Stack & Methodologies
+## Technical Stack & Methodologies
 
 | Area                  | Tools & Techniques                                                                 | Public Health Value                              |
 |-----------------------|------------------------------------------------------------------------------------|--------------------------------------------------|
@@ -82,7 +81,7 @@
 
 ---
 
-## 📁 Repository Structure
+## Repository Structure
 
 ```
 ├── ADVANCING STATISTICAL MODELS FOR ADDRESSING MISSING DATA.pdf  # Full thesis (7,951 words)
@@ -105,11 +104,11 @@
 
 ---
 
-## ▶️ How to Run
+## How to Run
 
 1. Clone this repo:
    ```bash
-   git clone https://github.com/yourusername/hiv-missing-data-imputation.git
+   git clone https://github.com/chinonso-okoroafor/hiv-missing-data-imputation.git
    cd hiv-missing-data-imputation
    ```
 
@@ -127,9 +126,9 @@
    source("code/model_evaluation.R")
    ```
 
-> ⚠️ Data sourced from PHIA Project (ZIMPHIA 2020).
+> Data sourced from PHIA Project (ZIMPHIA 2020).
 
-## 📚 References & Tools
+## References & Tools
 
 - **Dataset**: Population-based HIV Impact Assessment (PHIA) Project — ZIMPHIA 2020  
 - **ML Algorithms**:  
@@ -141,19 +140,10 @@
 
 ---
 
-## 🤝 Connect & Collaborate
+## Connect & Collaborate
 
-👤 **Author**: [Your Name]  
-📧 **Email**: [your.email@example.com]  
-💼 **LinkedIn**: [linkedin.com/in/yourprofile]  
+👤 **Author**: [Chinonso Okoroafor]  
+📧 **Email**: [chinonso.okoroafor@outlook.com]  
+💼 **LinkedIn**: [https://www.linkedin.com/in/chinonso-okoroafor-57086a284]  
 🎓 **Program**: MSc Data Science and Business Analytics, University of Plymouth  
 🌍 **Thesis Supervisor**: Dr. Malgorzata Wojtys
-
-> 👉 *Open to roles in: Public Health Data Science, Clinical Research, Health Tech, Epidemiology, Global Health Policy, Responsible AI.*
-
----
-
-✅ **Last Updated**: September 2024  
-✅ **License**: MIT — Use, adapt, learn, and build upon this work!
-
----
